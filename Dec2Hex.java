@@ -28,7 +28,7 @@ public class Dec2Hex
 
                 System.out.println("Hexadecimal representation is: " + hexadecimal);
 		return hexadecimal; // Returns the hexadeciamal value
-            } catch(Exception ex) // Displays Error if non-integer has been inserted
+            } catch(Exception ex) // Displays an error if non-integer has been inserted
             {
                 System.out.println("Error: Please only enter a number");
 		return "-1"; // Returns -1 if there was an error
