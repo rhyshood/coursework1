@@ -9,7 +9,7 @@ public class Dec2Hex
     {
 	if (args.length <= 0 || args[0].equals("")){ // Checks if a number has been inputed
             System.out.println("Error: Please enter a number"); // Displays error if false
-            return "-1";	
+            return "-1"; // Returns -1 if there was an error
         } else {
             try {
                 Arg1 = Integer.parseInt(args[0]);
@@ -27,11 +27,11 @@ public class Dec2Hex
                 }
 
                 System.out.println("Hexadecimal representation is: " + hexadecimal);
-		return hexadecimal;
+		return hexadecimal; // Returns the hexadeciamal value
             } catch(Exception ex) // Displays Error if non-integer has been inserted
             {
                 System.out.println("Error: Please only enter a number");
-		return "-1"; 
+		return "-1"; // Returns -1 if there was an error
             } 
         }
     }
