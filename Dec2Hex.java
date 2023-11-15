@@ -1,14 +1,15 @@
 import java.util.Scanner;
 
-class Dec2Hex
+public class Dec2Hex
 {
 
     public static int Arg1;
 
-    public static void main(String args[])
+    public static String main(String args[])
     {
-	if (args.length <= 0){ // Checks if a number has been inputed
+	if (args.length <= 0 || args[0].equals("")){ // Checks if a number has been inputed
             System.out.println("Error: Please enter a number"); // Displays error if false
+            return "-1";	
         } else {
             try {
                 Arg1 = Integer.parseInt(args[0]);
@@ -26,9 +27,11 @@ class Dec2Hex
                 }
 
                 System.out.println("Hexadecimal representation is: " + hexadecimal);
+		return hexadecimal;
             } catch(Exception ex) // Displays Error if non-integer has been inserted
             {
-                System.out.println("Error: Please only enter a number"); 
+                System.out.println("Error: Please only enter a number");
+		return "-1"; 
             } 
         }
     }
